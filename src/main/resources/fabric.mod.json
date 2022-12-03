@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bocchitheblock",
+  "version": "${version}",
+  "name": "Bocchi the Block!",
+  "description": "Bocchi the Rock... as a Block!",
+  "authors": ["Aikoyori"],
+  "contact": {
+    "sources": "https://github.com/Aikoyori/BocchiTheBlock-Fabric",
+    "homepage": "https://aikoyori.xyz",
+    "issues": "https://github.com/Aikoyori/BocchiTheBlock-Fabric/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/bocchitheblock/modicon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "xyz.aikoyori.bocchitheblock.client.BocchitheblockClient"
+    ],
+    "main": [
+      "xyz.aikoyori.bocchitheblock.Bocchitheblock"
+    ]
+  },
+  "mixins": [
+    "bocchitheblock.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}

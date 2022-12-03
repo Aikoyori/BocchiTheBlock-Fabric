@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#P#",
+    "SRS",
+    "STS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:magenta_dye"
+    },
+    "P": {
+      "item": "minecraft:pink_dye"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "R": {
+      "item": "minecraft:piston"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "bocchitheblock:bocchiblock",
+    "count": 1
+  }
+}

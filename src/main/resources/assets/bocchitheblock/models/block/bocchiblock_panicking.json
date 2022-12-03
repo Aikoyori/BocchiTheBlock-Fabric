@@ -1,0 +1,6 @@
+{
+    "parent": "bocchitheblock:block/bocchiblock",
+    "textures": {
+        "front": "bocchitheblock:block/bocchiface-scared"
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "panicking=false,facing=north": { "model": "bocchitheblock:block/bocchiblock" },
+    "panicking=true,facing=north": { "model": "bocchitheblock:block/bocchiblock_panicking" },
+    "panicking=false,facing=east": { "model": "bocchitheblock:block/bocchiblock","y" : 90},
+    "panicking=true,facing=east": { "model": "bocchitheblock:block/bocchiblock_panicking","y" : 90 },
+    "panicking=false,facing=south": { "model": "bocchitheblock:block/bocchiblock" ,"y" : 180},
+    "panicking=true,facing=south": { "model": "bocchitheblock:block/bocchiblock_panicking" ,"y" : 180},
+    "panicking=false,facing=west": { "model": "bocchitheblock:block/bocchiblock" ,"y" : 270},
+    "panicking=true,facing=west": { "model": "bocchitheblock:block/bocchiblock_panicking","y" : 270 },
+    "panicking=false,facing=up": { "model": "bocchitheblock:block/bocchiblock" ,"x" : 270},
+    "panicking=true,facing=up": { "model": "bocchitheblock:block/bocchiblock_panicking","x" : 270 },
+    "panicking=false,facing=down": { "model": "bocchitheblock:block/bocchiblock" ,"x" : 90},
+    "panicking=true,facing=down": { "model": "bocchitheblock:block/bocchiblock_panicking","x" : 90 }
+  }
+}
