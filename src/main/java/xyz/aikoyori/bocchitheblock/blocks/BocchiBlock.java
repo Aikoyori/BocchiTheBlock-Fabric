@@ -26,17 +26,53 @@ public class BocchiBlock extends BlockWithEntity {
 
 
     public static final BooleanProperty PANICKING = BooleanProperty.of("panicking");
+    public static final BooleanProperty POWERED = BooleanProperty.of("powered");
 
     public static final DirectionProperty FACING = Properties.FACING;
 
     public BocchiBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.SOUTH).with(PANICKING, false));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.SOUTH).with(PANICKING, false).with(POWERED, false));
 
+    }
+    public boolean hasComparatorOutput(BlockState state) {
+        return true;
+    }
+
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        if(state.get(PANICKING))
+        {
+            return 2;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if (world.isClient) {
+            return;
+        }
+        boolean bl = world.isReceivingRedstonePower(pos);
+        //System.out.println("ME IS CHECKING");
+        if (bl != state.get(POWERED)) {
+            if(bl)
+            {
+                //System.out.println(state);
+                state = state.with(PANICKING,!state.get(PANICKING));
+                world.setBlockState(pos,state);
+            }
+            world.setBlockState(pos,state.with(POWERED,bl),NOTIFY_ALL);
+
+        }
     }
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(Properties.FACING);
         stateManager.add(PANICKING);
+        stateManager.add(POWERED);
     }
 
     @Override
