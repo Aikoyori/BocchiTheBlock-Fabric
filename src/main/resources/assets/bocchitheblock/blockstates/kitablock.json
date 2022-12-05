@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "kitan=false,facing=north": { "model": "bocchitheblock:block/kitablock" },
+    "kitan=true,facing=north": { "model": "bocchitheblock:block/kitablock_kitan" },
+    "kitan=false,facing=east": { "model": "bocchitheblock:block/kitablock","y" : 90},
+    "kitan=true,facing=east": { "model": "bocchitheblock:block/kitablock_kitan","y" : 90 },
+    "kitan=false,facing=south": { "model": "bocchitheblock:block/kitablock" ,"y" : 180},
+    "kitan=true,facing=south": { "model": "bocchitheblock:block/kitablock_kitan" ,"y" : 180},
+    "kitan=false,facing=west": { "model": "bocchitheblock:block/kitablock" ,"y" : 270},
+    "kitan=true,facing=west": { "model": "bocchitheblock:block/kitablock_kitan","y" : 270 },
+    "kitan=false,facing=up": { "model": "bocchitheblock:block/kitablock" ,"x" : 270},
+    "kitan=true,facing=up": { "model": "bocchitheblock:block/kitablock_kitan","x" : 270 },
+    "kitan=false,facing=down": { "model": "bocchitheblock:block/kitablock" ,"x" : 90},
+    "kitan=true,facing=down": { "model": "bocchitheblock:block/kitablock_kitan","x" : 90 }
+  }
+}

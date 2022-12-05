@@ -18,7 +18,10 @@
       "xyz.aikoyori.bocchitheblock.client.BocchitheblockClient"
     ],
     "main": [
-      "xyz.aikoyori.bocchitheblock.Bocchitheblock"
+      "xyz.aikoyori.bocchitheblock.BocchiMod"
+    ],
+    "cardinal-components": [
+      "xyz.aikoyori.bocchitheblock.cca.EntityComponentAttacher"
     ]
   },
   "mixins": [
@@ -27,5 +30,11 @@
   "depends": {
     "fabric": "*",
     "minecraft": "1.19.2"
+  },
+  "accessWidener": "bocchitheblock.accesswidener",
+  "custom": {
+    "cardinal-components": [
+      "bocchitheblock:kita_block_effect"
+    ]
   }
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "bocchitheblock:block/kitablock",
+    "textures": {
+        "0": "bocchitheblock:block/kitafacekitan"
+    }
+}

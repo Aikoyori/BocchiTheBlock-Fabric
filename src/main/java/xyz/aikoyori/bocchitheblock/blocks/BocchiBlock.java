@@ -16,11 +16,10 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.event.listener.GameEventListener;
 import org.jetbrains.annotations.Nullable;
-import xyz.aikoyori.bocchitheblock.Bocchitheblock;
+import xyz.aikoyori.bocchitheblock.BocchiMod;
 
 public class BocchiBlock extends BlockWithEntity {
 
@@ -85,7 +84,7 @@ public class BocchiBlock extends BlockWithEntity {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, Bocchitheblock.bocchiBlockEntity,(world1,pos,state1,be)->{
+        return checkType(type, BocchiMod.BOCCHI_BLOCK_ENTITY,(world1, pos, state1, be)->{
             BocchiBlockEntity.tick(world1, pos, state1, be);
         });
     }

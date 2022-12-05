@@ -3,10 +3,9 @@ package xyz.aikoyori.bocchitheblock.blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import xyz.aikoyori.bocchitheblock.Bocchitheblock;
+import xyz.aikoyori.bocchitheblock.BocchiMod;
 import xyz.aikoyori.bocchitheblock.helper.BlockRotationCalculation;
 
 import static net.minecraft.block.Block.NOTIFY_ALL;
@@ -14,7 +13,7 @@ import static net.minecraft.block.Block.NOTIFY_ALL;
 public class BocchiBlockEntity extends BlockEntity {
     public int age;
     public BocchiBlockEntity(BlockPos pos, BlockState state) {
-        super(Bocchitheblock.bocchiBlockEntity, pos, state);
+        super(BocchiMod.BOCCHI_BLOCK_ENTITY, pos, state);
         age = 0;
     }
     public static void tick(World world, BlockPos pos, BlockState state, BocchiBlockEntity be) {
@@ -55,7 +54,7 @@ public class BocchiBlockEntity extends BlockEntity {
 
                 world.setBlockState(pos, state.with(BocchiBlock.FACING, BlockRotationCalculation.rotateWithGlazedMagenta(teracottaState,state)));
             }
-            else if(world.getBlockState(pos2).getBlock() == Bocchitheblock.bocchiBlock && !world.getBlockState(pos3).getMaterial().isReplaceable()) {
+            else if(world.getBlockState(pos2).getBlock() == BocchiMod.BOCCHI_BLOCK && !world.getBlockState(pos3).getMaterial().isReplaceable()) {
                 BlockState bbs = world.getBlockState(pos2);
                 if (bbs.get(BocchiBlock.FACING) == state.get(BocchiBlock.FACING).getOpposite())
                     world.setBlockState(pos, state.with(BocchiBlock.FACING, bbs.get(BocchiBlock.FACING)));
