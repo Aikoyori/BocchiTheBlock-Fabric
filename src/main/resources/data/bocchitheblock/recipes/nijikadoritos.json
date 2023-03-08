@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##P",
+    "SM ",
+    "P  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "P": {
+      "item": "minecraft:potato"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "bocchitheblock:nijika_doritos",
+    "count": 16
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "bocchitheblock:block/nijikablock",
+    "textures": {
+        "3": "bocchitheblock:block/nijikafaceactivate"
+    }
+}

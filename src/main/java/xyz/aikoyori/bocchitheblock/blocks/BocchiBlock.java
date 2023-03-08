@@ -31,7 +31,7 @@ public class BocchiBlock extends BlockWithEntity {
 
     public BocchiBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.SOUTH).with(PANICKING, false).with(POWERED, false));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(PANICKING, false).with(POWERED, false));
 
     }
     public boolean hasComparatorOutput(BlockState state) {
@@ -69,7 +69,7 @@ public class BocchiBlock extends BlockWithEntity {
         }
     }
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
-        stateManager.add(Properties.FACING);
+        stateManager.add(FACING);
         stateManager.add(PANICKING);
         stateManager.add(POWERED);
     }

@@ -1,4 +1,10 @@
 {
   "block.bocchitheblock.bocchiblock": "Bocchi Block",
-  "block.bocchitheblock.kitablock": "Kita Block"
+  "block.bocchitheblock.kitablock": "Kita Block",
+  "block.bocchitheblock.nijikablock": "Nijika Block",
+  "item.bocchitheblock.nijika_doritos": "Nijika Doritos",
+  "entity.bocchitheblock.nijika_doritos": "Nijika Doritos",
+  "itemGroup.bocchitheblock.bocchimodtab": "Bocchi the Block!",
+  "death.attack.doritos": "%1$s was dorito'd by %2$s",
+  "death.attack.doritos.item": "%1$s was dorito'd by %2$s using %3$s"
 }

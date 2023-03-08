@@ -4,6 +4,7 @@
   "package": "xyz.aikoyori.bocchitheblock.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "DragonDamagingDoritos",
     "EntityArtificialDayMixin",
     "InstrumentInjection"
   ],

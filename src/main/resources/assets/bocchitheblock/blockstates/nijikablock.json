@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "activated=false,facing=north": { "model": "bocchitheblock:block/nijikablock" },
+    "activated=false,facing=east": { "model": "bocchitheblock:block/nijikablock","y" : 90},
+    "activated=false,facing=south": { "model": "bocchitheblock:block/nijikablock" ,"y" : 180},
+    "activated=false,facing=west": { "model": "bocchitheblock:block/nijikablock" ,"y" : 270},
+    "activated=false,facing=up": { "model": "bocchitheblock:block/nijikablock" ,"x" : 270},
+    "activated=false,facing=down": { "model": "bocchitheblock:block/nijikablock" ,"x" : 90},
+    "activated=true,facing=north": { "model": "bocchitheblock:block/nijikablock_activated" },
+    "activated=true,facing=east": { "model": "bocchitheblock:block/nijikablock_activated","y" : 90},
+    "activated=true,facing=south": { "model": "bocchitheblock:block/nijikablock_activated" ,"y" : 180},
+    "activated=true,facing=west": { "model": "bocchitheblock:block/nijikablock_activated" ,"y" : 270},
+    "activated=true,facing=up": { "model": "bocchitheblock:block/nijikablock_activated" ,"x" : 270},
+    "activated=true,facing=down": { "model": "bocchitheblock:block/nijikablock_activated" ,"x" : 90}
+  }
+}

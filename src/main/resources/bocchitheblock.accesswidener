@@ -1,2 +1,4 @@
 accessWidener v1 named
 accessible method net/minecraft/entity/mob/MobEntity isAffectedByDaylight ()Z
+accessible field net/minecraft/block/AbstractBlock collidable Z
+accessible field net/minecraft/client/network/ClientPlayerEntity client Lnet/minecraft/client/MinecraftClient;

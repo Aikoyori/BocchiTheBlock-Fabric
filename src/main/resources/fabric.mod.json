@@ -15,7 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "xyz.aikoyori.bocchitheblock.client.BocchitheblockClient"
+      "xyz.aikoyori.bocchitheblock.client.BocchiModClient"
     ],
     "main": [
       "xyz.aikoyori.bocchitheblock.BocchiMod"

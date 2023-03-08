@@ -10,7 +10,7 @@ public class KitaBlockEntityRenderer implements BlockEntityRenderer<KitaBlockEnt
     @Override
     public void render(KitaBlockEntity entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         matrices.push();
-
+            // add special kita vfx heree
         matrices.pop();
     }
 }
